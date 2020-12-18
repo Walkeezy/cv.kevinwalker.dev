@@ -1,5 +1,6 @@
 export default function CVItem(data) {
   const { id, title, items } = data.data
+  console.log(title)
 
   return (
     <div className="cv-item">

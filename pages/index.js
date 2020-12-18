@@ -1,7 +1,7 @@
 import { Head } from './components/head'
-import CVItem from './components/cv-item'
+import CVItem from '../components/cv-item'
 import Image from 'next/image'
-import WorkEducationData from './data/work-education.json'
+import WorkEducationData from '../data/work-education.json'
 
 export default function Home() {
   return (
