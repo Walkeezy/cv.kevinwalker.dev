@@ -1,0 +1,53 @@
+.cv-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 5vw;
+
+  @include s {
+    flex-wrap: wrap;
+  }
+}
+
+.cv-item__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  flex: 0 0 70%;
+
+  @include s {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  p {
+    margin: 0.5em 0;
+  }
+
+  li {
+    margin: 0 0 3rem 0;
+
+    &:before {
+      display: none;
+    }
+
+    @include s {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.cv-item__heading {
+  font-size: 1.2rem;
+  font-family: $font-family-headings;
+  font-weight: 500;
+
+  @include s {
+    font-size: 1rem;
+  }
+}
+
+.cv-item__meta {
+  font-style: italic;
+}

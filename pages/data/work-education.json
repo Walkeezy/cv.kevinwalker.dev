@@ -1,0 +1,66 @@
+[
+  {
+    "id": "work",
+    "title": "Arbeitserfahrung",
+    "items": [
+      {
+        "heading": "Webentwickler, CTO",
+        "meta": "CLUS AG / Mai 2016 – Heute",
+        "desc": "Beratung, Konzeption und Umsetzung von diversen Web-Projekten, Leitung und Organisiation des Web-Teams, Betreuung von Lernenden"
+      },
+      {
+        "heading": "Webentwickler, Projektleiter",
+        "meta": "Cosi Tscholl AG / Oktober 2015 – April 2016",
+        "desc": "Beratung, Konzeption und Umsetzung von diversen Web-Projekten, Leitung einzelner Projekte"
+      },
+      {
+        "heading": "Webdesigner & -entwickler",
+        "meta": "Clickwerk AG / Oktober 2011 – September 2015",
+        "desc": "Beratung, Konzeption, grafische sowie technische Umsetzung von Web-Projekten"
+      },
+      {
+        "heading": "Rekrutenschule Verkehrssoldat",
+        "meta": "Schweizer Armee / März 2011 – August 2011"
+      },
+      {
+        "heading": "IT Supporter",
+        "meta": "Hamilton Bonaduz AG / März 2011 – August 2011",
+        "desc": "Mitarbeit im First Level Support des IT Helpdesks, Installation und Konfiguration der Informatik-Arbeitsplatzinfrastruktur, Mitarbeit bei den Betriebsübernahmen von bestehenden oder neuen Applikationen"
+      },
+      {
+        "heading": "Informatiker EFZ",
+        "meta": "Hamilton Bonaduz AG / August 2006 – Juli 2010",
+        "desc": "Ausbildung zum Informatiker mit EFZ in generalistischer Ausrichtung"
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "title": "Ausbildung",
+    "items": [
+      {
+        "heading": "CAS Front End Engineering",
+        "meta": "HSR Hochschule für Technik Rapperswil / 2018 - 2019",
+        "desc": "Zertifikatslehrgang zur ingenieurmässigen Entwicklung von Web-Anwendungen, Schwerpunkte: Design & Usability, HTML & CSS, JavaScript, Architektur, Tools & Best Practices"
+      },
+      {
+        "heading": "Berufsbildnerkurs",
+        "meta": "ibW Höhere Fachschule Südostschweiz / 2017"
+      }
+    ]
+  },
+  {
+    "id": "certificates",
+    "title": "Zertifikate",
+    "items": [
+      {
+        "heading": "Cambridge Certificate in Advanced English",
+        "meta": "Cambridge English Language Assessment / 2016"
+      },
+      {
+        "heading": "Google Analytics Zertifizierung",
+        "meta": "Google / 2016"
+      }
+    ]
+  }
+]

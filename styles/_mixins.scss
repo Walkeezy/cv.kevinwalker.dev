@@ -1,0 +1,17 @@
+@mixin l {
+  @media (max-width: #{$break-l}) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media (max-width: #{$break-m}) {
+    @content;
+  }
+}
+
+@mixin s {
+  @media (max-width: #{$break-s}) {
+    @content;
+  }
+}

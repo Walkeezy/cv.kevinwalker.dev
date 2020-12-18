@@ -1,0 +1,131 @@
+@import './variables';
+@import './mixins';
+@import './typography.scss';
+@import './cv-item.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  line-height: $line-height;
+  font-size: 120%;
+  font-family: $font-family;
+  color: $color-dark;
+  background: $color-highlight;
+
+  @include s {
+    font-size: 105%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: $color-dark;
+  background: $color-highlight;
+}
+
+main {
+  border: 1rem solid $color-highlight;
+
+  @include s {
+    border: 0.5rem solid $color-highlight;
+  }
+}
+
+.intro {
+  background: $color-light;
+}
+
+.intro__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include s {
+    flex-wrap: wrap;
+  }
+}
+
+.intro__text {
+  width: auto;
+  flex: 1 1 auto;
+
+  @include s {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.intro__image {
+  width: 500px;
+  flex: 0 0 500px;
+  margin-left: 5vw;
+
+  @include l {
+    width: 300px;
+    flex: 0 0 300px;
+  }
+
+  @include s {
+    margin-left: 0;
+    margin-top: 7.5vw;
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+.content {
+  max-width: $size-content;
+  width: $size-viewport;
+  margin: 0 auto;
+  padding: 7.5vw 0;
+}
+
+.description {
+  background: $color-white;
+}
+
+.description__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include m {
+    flex-wrap: wrap;
+  }
+}
+
+.description__background {
+  @include m {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.description__skills {
+  width: 500px;
+  flex: 0 0 500px;
+  margin-left: 5vw;
+
+  @include l {
+    width: 45%;
+    flex: 0 0 45%;
+  }
+
+  @include m {
+    width: 100%;
+    flex: 0 0 100%;
+    margin: 0;
+  }
+}
+
+.work-education {
+  background: $color-light;
+}
