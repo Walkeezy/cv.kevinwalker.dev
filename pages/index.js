@@ -1,9 +1,25 @@
+import React, { useEffect } from 'react'
+
 import { Head } from './components/head'
 import CVItem from '../components/cv-item'
 import Image from 'next/image'
 import WorkEducationData from '../data/work-education.json'
 
 export default function Home() {
+  const addColorCSSClass = () => {
+    const colors = ['yellow', 'teal', 'red', 'green']
+    const randomColor = colors[Math.floor(Math.random() * colors.length)]
+    const html = document.getElementsByTagName('html')[0]
+    html.classList.add('highlight-color--' + randomColor)
+  }
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('load', addColorCSSClass)
+    }
+    return () => window.removeEventListener('load', addColorCSSClass)
+  }, [addColorCSSClass])
+
   return (
     <>
       <Head title="Kevin Walker – Webentwickler & digitaler Spezialist"></Head>
@@ -30,9 +46,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="description">
-          <div className="description__content content">
-            <div className="description__background">
+        <section className="background">
+          <div className="background__content content">
+            <div className="background__text">
               <h2>Hintergrund</h2>
               <p>
                 Das Web ist mein Zuhause. Ich durfte unzählige Projekte vom Erstgespäch bis zum
@@ -41,7 +57,7 @@ export default function Home() {
                 erfolgreiches Produkt ausmacht.
               </p>
             </div>
-            <div className="description__skills">
+            <div className="background__skills">
               <h2>Soft Skills</h2>
               <ul>
                 <li>Ganzheitliches Denken</li>
@@ -58,6 +74,26 @@ export default function Home() {
             {WorkEducationData.map((data) => {
               return <CVItem key={data.id} data={data}></CVItem>
             })}
+          </div>
+        </section>
+        <section className="skills">
+          <div className="skills__content content">
+            <h2>Hard Skills</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS, SCSS, LESS, Stylus</li>
+              <li>JavaScript</li>
+              <li>Webpack, CSS Preprocessing, Babel</li>
+              <li>React, Gatsby, NextJS</li>
+              <li>Wordpress</li>
+              <li>Versionskontrolle, Git</li>
+              <li>HTML</li>
+              <li>CSS, SCSS, LESS, Stylus</li>
+              <li>JavaScript, Babel</li>
+              <li>React, Gatsby, NextJS</li>
+              <li>Wordpress</li>
+              <li>Versionskontrolle, Git</li>
+            </ul>
           </div>
         </section>
       </main>

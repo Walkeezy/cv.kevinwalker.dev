@@ -1,0 +1,57 @@
+.intro {
+  background: $color-light;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(7.5vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.intro__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 500ms ease-out 0s 1;
+
+  @include s {
+    flex-wrap: wrap;
+  }
+}
+
+.intro__text {
+  width: auto;
+  flex: 1 1 auto;
+
+  @include s {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.intro__image {
+  width: 500px;
+  flex: 0 0 500px;
+  margin-left: 5vw;
+
+  @include l {
+    width: 300px;
+    flex: 0 0 300px;
+  }
+
+  @include s {
+    margin-left: 0;
+    margin-top: 7.5vw;
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  img {
+    border-radius: $border-radius;
+  }
+}

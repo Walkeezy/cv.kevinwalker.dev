@@ -1,3 +1,7 @@
+.work-education {
+  background: $color-light;
+}
+
 .cv-item {
   display: flex;
   justify-content: space-between;
@@ -6,6 +10,10 @@
 
   @include s {
     flex-wrap: wrap;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -30,6 +38,10 @@
 
     &:before {
       display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
     @include s {

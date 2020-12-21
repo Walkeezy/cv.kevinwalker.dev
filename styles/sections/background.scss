@@ -1,0 +1,37 @@
+.background {
+  background: $color-white;
+}
+
+.background__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include m {
+    flex-wrap: wrap;
+  }
+}
+
+.background__text {
+  @include m {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.background__skills {
+  width: 500px;
+  flex: 0 0 500px;
+  margin-left: 5vw;
+
+  @include l {
+    width: 45%;
+    flex: 0 0 45%;
+  }
+
+  @include m {
+    width: 100%;
+    flex: 0 0 100%;
+    margin: 0;
+  }
+}

@@ -8,13 +8,20 @@ $color-white: #ffffff;
 $color-light: #f5f7fa;
 $color-medium: #1b4960;
 $color-dark: #040c17;
-$color-highlight: #ffc700;
+$color-highlight: #21aabd;
+
+$colors: (
+  'yellow': #ffc700,
+  'teal': #21aabd,
+  'red': #e45635,
+  'green': #4b9e52
+);
 
 $size-content: 1400px;
 $size-viewport: 84vw;
 
 $border-radius: 2px;
-$transition-mode: 100ms ease-in-out;
+$transition-mode: 150ms ease-out;
 
 $break-l: 1200px;
 $break-m: 1000px;

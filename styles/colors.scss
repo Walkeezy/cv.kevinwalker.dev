@@ -1,0 +1,33 @@
+@import './variables';
+
+@each $name, $color in $colors {
+  .highlight-color--#{$name} {
+    background: $color;
+
+    ::selection {
+      background: $color;
+    }
+
+    main {
+      border-color: $color;
+    }
+
+    .color--highlight {
+      color: $color;
+    }
+
+    li:before {
+      color: $color;
+    }
+
+    .button:link,
+    .button:visited {
+      background: $color;
+    }
+
+    .button:hover,
+    .button:active {
+      background: darken($color, 3%);
+    }
+  }
+}
