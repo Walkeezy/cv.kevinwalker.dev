@@ -6,19 +6,14 @@ import Image from 'next/image'
 import WorkEducationData from '../data/work-education.json'
 
 export default function Home() {
-  const addColorCSSClass = () => {
-    const colors = ['yellow', 'teal', 'red', 'green']
-    const randomColor = colors[Math.floor(Math.random() * colors.length)]
-    const html = document.getElementsByTagName('html')[0]
-    html.classList.add('highlight-color--' + randomColor)
-  }
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      window.addEventListener('load', addColorCSSClass)
+      const colors = ['yellow', 'teal', 'red', 'green']
+      const randomColor = colors[Math.floor(Math.random() * colors.length)]
+      const html = document.getElementsByTagName('html')[0]
+      html.classList.add('highlight-color--' + randomColor)
     }
-    return () => window.removeEventListener('load', addColorCSSClass)
-  }, [addColorCSSClass])
+  }, [])
 
   return (
     <>
