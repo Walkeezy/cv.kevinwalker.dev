@@ -2,6 +2,14 @@
   background: $color-white;
 
   ul {
-    column-count: 2;
+    column-count: 3;
+
+    @include m {
+      column-count: 2;
+    }
+
+    @include s {
+      column-count: 1;
+    }
   }
 }

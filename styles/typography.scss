@@ -1,10 +1,27 @@
 .color--highlight {
   color: $color-dark;
-  transition: color $transition-mode;
+}
+
+a:link,
+a:visited {
+  display: inline-block;
+  color: $color-dark;
+  text-decoration: none;
+  border-bottom: 2px solid $color-medium;
+  transition: color $transition-mode, transform $transition-mode;
+}
+
+a:hover,
+a:active {
+  color: $color-medium;
+}
+
+a:active {
+  transform: scale(0.93);
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-family: $font-family-headings;
   font-weight: 500;
   margin-top: 0;
@@ -36,6 +53,7 @@ h2 {
   padding: 0.75rem 2rem;
   font-size: 1rem;
   color: $color-white;
+  border: none;
   border-radius: $border-radius;
   background: darken($color-light, 5%);
   text-decoration: none;

@@ -20,6 +20,11 @@
       color: $color;
     }
 
+    a:not(.button):hover,
+    a:not(.button):active {
+      color: $color;
+    }
+
     .button:link,
     .button:visited {
       background: $color;
