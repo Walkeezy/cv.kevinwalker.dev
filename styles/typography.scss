@@ -1,5 +1,6 @@
 .color--highlight {
-  color: $color-dark;
+  color: $color-medium;
+  transition: color $transition-mode;
 }
 
 a:link,
@@ -55,7 +56,7 @@ h2 {
   color: $color-white;
   border: none;
   border-radius: $border-radius;
-  background: darken($color-light, 5%);
+  background: $color-medium;
   text-decoration: none;
   transition: background-color $transition-mode, transform $transition-mode;
 
@@ -66,7 +67,7 @@ h2 {
 }
 
 .button:hover {
-  background: darken($color-highlight, 3%);
+  background: darken($color-medium, 3%);
 }
 
 .button:active {
@@ -86,8 +87,9 @@ li {
 li:before {
   content: '\2022';
   font-size: 1.5rem;
-  color: $color-highlight;
+  color: $color-medium;
   display: inline-block;
   width: 1.5rem;
   margin-left: -1.5rem;
+  transition: color $transition-mode;
 }

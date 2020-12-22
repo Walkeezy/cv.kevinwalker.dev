@@ -21,14 +21,9 @@ body {
   box-sizing: border-box;
 }
 
-::selection {
-  color: $color-dark;
-  background: $color-highlight;
-}
-
 main {
-  border: 1rem solid darken($color-light, 5%);
-  transition: border $transition-mode;
+  border: 1rem solid darken($color-light, 10%);
+  transition: border-color $transition-mode;
 
   @include s {
     border-width: 0.5rem;

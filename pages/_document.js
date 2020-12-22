@@ -7,10 +7,8 @@ class MyDocument extends Document {
   }
 
   render() {
-    const colors = ['yellow', 'teal', 'red', 'green']
-    const randomColor = colors[Math.floor(Math.random() * colors.length)]
     return (
-      <Html lang="de" className={`highlight-color--${randomColor}`}>
+      <Html lang="de">
         <Head />
         <body>
           <Main />
