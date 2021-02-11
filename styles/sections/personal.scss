@@ -3,5 +3,50 @@
 }
 
 .personal__content {
-  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include m {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.personal__text {
+  @include m {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.personal__photos {
+  width: 500px;
+  flex: 0 0 500px;
+  margin-right: 5vw;
+
+  @include m {
+    margin: 0 0 2rem;
+  }
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0;
+
+  img {
+    display: block;
+  }
+}
+
+.photos--row-1 {
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.photo-1,
+.photo-3 {
+  margin-right: 0.5rem;
 }

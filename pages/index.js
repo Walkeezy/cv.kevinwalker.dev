@@ -50,7 +50,7 @@ export default function Home() {
                 alt="Kevin Walker"
                 width={500}
                 height={500}
-                layout="responsive"
+                layout="intrinsic"
                 priority="true"
               />
             </div>
@@ -108,17 +108,71 @@ export default function Home() {
             </ul>
           </div>
         </section>
-        {/* <section className="personal">
+        <section className="personal">
           <div className="personal__content content">
-            <Image
-              src="/personal.jpg"
-              alt="Hobbies von Kevin Walker"
-              width={1380}
-              height={460}
-              layout="responsive"
-            />
+            <div className="personal__photos">
+              <div className="photos photos--row-1">
+                <div className="photo-1">
+                  <Image
+                    className="photo-large"
+                    src="/hobby.jpg"
+                    alt="Hobby"
+                    width={340}
+                    height={230}
+                    layout="intrinsic"
+                    priority="false"
+                  />
+                </div>
+                <div className="photo-2">
+                  <Image
+                    className="photo-small"
+                    src="/hobby2.jpg"
+                    alt="Hobby"
+                    width={230}
+                    height={156}
+                    layout="intrinsic"
+                    priority="false"
+                  />
+                </div>
+              </div>
+              <div className="photos photos--row-2">
+                <div className="photo-1">
+                  <Image
+                    className="photo-small"
+                    src="/hobby2.jpg"
+                    alt="Hobby"
+                    width={230}
+                    height={156}
+                    layout="intrinsic"
+                    priority="false"
+                  />
+                </div>
+                <div className="photo-2">
+                  <Image
+                    className="photo-large"
+                    src="/hobby.jpg"
+                    alt="Hobby"
+                    width={340}
+                    height={230}
+                    layout="intrinsic"
+                    priority="false"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="personal__text">
+              <h2>Hobbies &amp; Freizeit</h2>
+              <p>
+                Am liebsten draussen unterwegs. Meistens auf zwei Rädern; mit dem Mountainbike, dem
+                Rennvelo oder dem Motorrad. Im Winter gerne auf dem Snowboard oder den Langlaufski.
+              </p>
+              <p>
+                Und neuerdings erkundige ich unsere schönen Berge auch aus der Luft. Aktuell
+                versuche ich mich am Gleitschirm-Brevet.
+              </p>
+            </div>
           </div>
-        </section> */}
+        </section>
         <section className="contact">
           <div className="contact__content content">
             <div className="contact__heading">
