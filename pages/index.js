@@ -104,8 +104,8 @@ export default function Home() {
                     className="photo-large"
                     src="/gleitschirm.jpg"
                     alt="Gleitschirm"
-                    width={340}
-                    height={230}
+                    width={292}
+                    height={197}
                     layout="intrinsic"
                     priority="false"
                   />
@@ -115,8 +115,8 @@ export default function Home() {
                     className="photo-small"
                     src="/bike.jpg"
                     alt="Bike"
-                    width={230}
-                    height={156}
+                    width={198}
+                    height={134}
                     layout="intrinsic"
                     priority="false"
                   />
@@ -128,8 +128,8 @@ export default function Home() {
                     className="photo-small"
                     src="/rennvelo.jpg"
                     alt="Rennvelo"
-                    width={230}
-                    height={156}
+                    width={198}
+                    height={134}
                     layout="intrinsic"
                     priority="false"
                   />
@@ -139,8 +139,8 @@ export default function Home() {
                     className="photo-large"
                     src="/langlauf.jpg"
                     alt="Langlauf"
-                    width={340}
-                    height={230}
+                    width={292}
+                    height={197}
                     layout="intrinsic"
                     priority="false"
                   />
