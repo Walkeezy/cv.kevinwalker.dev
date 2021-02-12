@@ -9,13 +9,19 @@ import SoftSkillsData from '../data/soft-skills.json'
 import BackgroundData from '../data/background.json'
 import PersonalData from '../data/personal.json'
 
+function setPageColor() {
+  const colors = ['yellow', 'teal', 'red', 'green', 'purple']
+  const randomColor = colors[Math.floor(Math.random() * colors.length)]
+  const html = document.getElementsByTagName('html')[0]
+  html.className = ''
+  html.classList.add('highlight-color--' + randomColor)
+}
+
 export default function Home() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const colors = ['yellow', 'teal', 'red', 'green', 'purple']
-      const randomColor = colors[Math.floor(Math.random() * colors.length)]
-      const html = document.getElementsByTagName('html')[0]
-      html.classList.add('highlight-color--' + randomColor)
+      setPageColor()
+      setInterval(setPageColor, 60000)
     }
   }, [])
 
