@@ -4,11 +4,15 @@ import { Head } from './components/head'
 import CVItem from '../components/cv-item'
 import Image from 'next/image'
 import WorkEducationData from '../data/work-education.json'
+import HardSkillsData from '../data/hard-skills.json'
+import SoftSkillsData from '../data/soft-skills.json'
+import BackgroundData from '../data/background.json'
+import PersonalData from '../data/personal.json'
 
 export default function Home() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const colors = ['yellow', 'teal', 'red', 'green']
+      const colors = ['yellow', 'teal', 'red', 'green', 'purple']
       const randomColor = colors[Math.floor(Math.random() * colors.length)]
       const html = document.getElementsByTagName('html')[0]
       html.classList.add('highlight-color--' + randomColor)
@@ -59,22 +63,17 @@ export default function Home() {
         <section className="background">
           <div className="background__content content">
             <div className="background__text">
-              <h2>Hintergrund</h2>
-              <p>
-                Das Web ist mein Zuhause. Bei meiner Arbeit in mehreren Agenturen durfte ich
-                unzählige Projekte vom Erstgespäch bis zum erfolgreichen Abschluss begleiten und
-                Einblicke in die unterschiedlichsten Branchen bekommen. Dabei habe ich gelernt was
-                ein erfolgreiches Produkt ausmacht.
-              </p>
+              <h2>{BackgroundData.title}</h2>
+              {BackgroundData.text.map((paragraph, index) => {
+                return <p key={index}>{paragraph}</p>
+              })}
             </div>
             <div className="background__skills">
-              <h2>Soft Skills</h2>
+              <h2>{SoftSkillsData.title}</h2>
               <ul>
-                <li>Ganzheitliches Denken</li>
-                <li>Selbstorganisation</li>
-                <li>Teamfähigkeit</li>
-                <li>Zuverlässigkeit</li>
-                <li>Offenheit und Bereitschaft für Veränderungen und unerwartete Hindernisse</li>
+                {SoftSkillsData.items.map((item, index) => {
+                  return <li key={index}>{item}</li>
+                })}
               </ul>
             </div>
           </div>
@@ -88,23 +87,11 @@ export default function Home() {
         </section>
         <section className="skills">
           <div className="skills__content content">
-            <h2>Hard Skills</h2>
+            <h2>{HardSkillsData.title}</h2>
             <ul>
-              <li>HTML</li>
-              <li>CSS, SCSS, LESS, Stylus</li>
-              <li>JavaScript</li>
-              <li>React, Gatsby, NextJS</li>
-              <li>Webpack, Babel</li>
-              <li>PHP</li>
-              <li>WordPress</li>
-              <li>MySQL & NoSQL</li>
-              <li>Versionskontrolle, Git</li>
-              <li>ESLint, Stylelint, Prettier</li>
-              <li>Debugging & Testing</li>
-              <li>Webdesign & Usability</li>
-              <li>Web Performance</li>
-              <li>Accessibilty</li>
-              <li>SEO</li>
+              {HardSkillsData.items.map((item, index) => {
+                return <li key={index}>{item}</li>
+              })}
             </ul>
           </div>
         </section>
@@ -115,8 +102,8 @@ export default function Home() {
                 <div className="photo-1">
                   <Image
                     className="photo-large"
-                    src="/hobby.jpg"
-                    alt="Hobby"
+                    src="/gleitschirm.jpg"
+                    alt="Gleitschirm"
                     width={340}
                     height={230}
                     layout="intrinsic"
@@ -126,8 +113,8 @@ export default function Home() {
                 <div className="photo-2">
                   <Image
                     className="photo-small"
-                    src="/hobby2.jpg"
-                    alt="Hobby"
+                    src="/bike.jpg"
+                    alt="Bike"
                     width={230}
                     height={156}
                     layout="intrinsic"
@@ -139,8 +126,8 @@ export default function Home() {
                 <div className="photo-1">
                   <Image
                     className="photo-small"
-                    src="/hobby2.jpg"
-                    alt="Hobby"
+                    src="/rennvelo.jpg"
+                    alt="Rennvelo"
                     width={230}
                     height={156}
                     layout="intrinsic"
@@ -150,8 +137,8 @@ export default function Home() {
                 <div className="photo-2">
                   <Image
                     className="photo-large"
-                    src="/hobby.jpg"
-                    alt="Hobby"
+                    src="/langlauf.jpg"
+                    alt="Langlauf"
                     width={340}
                     height={230}
                     layout="intrinsic"
@@ -161,15 +148,10 @@ export default function Home() {
               </div>
             </div>
             <div className="personal__text">
-              <h2>Hobbies &amp; Freizeit</h2>
-              <p>
-                Am liebsten draussen unterwegs. Meistens auf zwei Rädern; mit dem Mountainbike, dem
-                Rennvelo oder dem Motorrad. Im Winter gerne auf dem Snowboard oder den Langlaufski.
-              </p>
-              <p>
-                Und neuerdings erkundige ich unsere schönen Berge auch aus der Luft. Aktuell
-                versuche ich mich am Gleitschirm-Brevet.
-              </p>
+              <h2>{PersonalData.title}</h2>
+              {PersonalData.text.map((paragraph, index) => {
+                return <p key={index}>{paragraph}</p>
+              })}
             </div>
           </div>
         </section>

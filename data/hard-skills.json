@@ -1,0 +1,20 @@
+{
+  "title": "Hard Skills",
+  "items": [
+    "HTML",
+    "CSS, SCSS, LESS, Stylus",
+    "JavaScript",
+    "React, Gatsby, NextJS",
+    "Webpack, Babel",
+    "PHP",
+    "WordPress",
+    "MySQL & NoSQL",
+    "Versionskontrolle, Git",
+    "ESLint, Stylelint, Prettier",
+    "Debugging & Testing",
+    "Webdesign & Usability",
+    "Web Performance",
+    "Accessibility",
+    "SEO"
+  ]
+}

@@ -26,6 +26,8 @@
   margin-right: 5vw;
 
   @include m {
+    width: 100%;
+    flex: 0 0 100%;
     margin: 0 0 2rem;
   }
 }
