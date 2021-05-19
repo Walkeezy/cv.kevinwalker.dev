@@ -3,9 +3,11 @@
   "items": [
     "HTML",
     "CSS, SCSS, LESS, Stylus",
+    "Tailwind",
     "JavaScript",
     "React, Gatsby, NextJS",
-    "Webpack, Babel",
+    "Webpack, Babel, Gulp",
+    "Storybook",
     "PHP",
     "WordPress",
     "MySQL & NoSQL",

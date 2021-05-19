@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding-bottom: 2vw;
 
   @include s {
     display: block;
@@ -60,4 +61,17 @@
       font-size: 1.75rem;
     }
   }
+}
+
+.contact__code-link {
+  width: 100%;
+  flex: 0 0 100%;
+  margin-top: 6vw;
+  text-align: center;
+}
+
+.code-link:link,
+.code-link:visited {
+  font-size: 0.75rem;
+  border-bottom-width: 1px;
 }

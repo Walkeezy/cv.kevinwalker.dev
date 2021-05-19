@@ -195,7 +195,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/kevinwalkeezy/"
+                    href="https://www.instagram.com/walkeezy/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -203,6 +203,16 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="contact__code-link">
+              <a
+                className="code-link"
+                href="https://github.com/Walkeezy/cv.kevinwalker.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code auf Github ansehen
+              </a>
             </div>
           </div>
         </section>
